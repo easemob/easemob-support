@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             
             let config = EaseCallConfig.init()
             config.enableRTCTokenValidate = true
-            config.agoraAppId = "c7a0e2154b6b44518f9db8f2ccc68d3b"
+            config.agoraAppId = "声网的agoraAppId"
             EaseCallManager.shared().initWith(config, delegate: self)
         }
     }
@@ -61,6 +61,7 @@ extension ViewController:EaseCallDelegate{
         
         let params = ["ChannelName": aChannelName, "uid": aAgoraUid] as [String : Any]
 
+        //写本地的IP或者服务的域名
         var urlReq = URLRequest.init(url: URL(string: "http://172.17.12.5:8082/fetch_rtc_token")!)
         urlReq.setValue("Bearer \(EMClient.shared().accessUserToken)", forHTTPHeaderField: "Authorization")
         urlReq.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")

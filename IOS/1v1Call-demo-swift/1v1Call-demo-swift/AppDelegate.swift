@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let options = EMOptions(appkey: "easemob-demo#support")
+        let options = EMOptions(appkey: "你的appkey")
         options.logLevel = .debug
         options.isAutoLogin = false
         options.enableConsoleLog = true
