@@ -1,0 +1,11 @@
+.easemob_chatroom_container {
+  position: relative;
+  width: 100%;
+  min-width: 150px;
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f9;
+  overflow: hidden;
+}
