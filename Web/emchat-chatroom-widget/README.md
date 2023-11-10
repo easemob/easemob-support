@@ -10,6 +10,9 @@
 
 ## 插件使用
 
+- npm 包名 `emchat-chatroom-widget`
+- 引入示例如下图所示
+
 ```js
 import EMChatroom from "emchat-chatroom-widget/emchat-chatroom-widget.esm.js"
 import "emchat-chatroom-widget/style.css"
@@ -49,3 +52,7 @@ pnpm run dev
 //打包源码
 pnpm run build:widget
 ```
+
+## 实现心路历程可参考这篇文章，如有疑问敬请文章下方留言
+
+[文章地址](https://juejin.cn/post/7277441492602863656)
