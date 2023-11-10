@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M26-SY-nAL">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_v1Call_demo_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyw-Um-B5j">
+                                <rect key="frame" x="76" y="564" width="94" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="3pP-G7-SY2"/>
+                                    <constraint firstAttribute="height" constant="35" id="AjO-ug-tSF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="发起通话"/>
+                                <connections>
+                                    <action selector="call:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOa-Cb-MpT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kxX-KX-rd4">
+                                <rect key="frame" x="76" y="316" width="56.666666666666657" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="WGz-UX-rbm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="wf2" borderStyle="roundedRect" placeholder="通话方id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhc-e4-nGo">
+                                <rect key="frame" x="76" y="501" width="82.666666666666686" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="KxE-6p-Spq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="wf1" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBm-JG-01v">
+                                <rect key="frame" x="76" y="251" width="56.666666666666657" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3o2-91-SWs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJT-dU-WJI">
+                                <rect key="frame" x="84" y="380" width="59" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="doH-Mg-fiU"/>
+                                    <constraint firstAttribute="width" constant="59" id="s0h-a5-PkZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="登录"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gN-gL-q7b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tyw-Um-B5j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="IgM-lp-oK6"/>
+                            <constraint firstItem="tyw-Um-B5j" firstAttribute="top" secondItem="xhc-e4-nGo" secondAttribute="bottom" constant="29" id="LnK-zZ-RgK"/>
+                            <constraint firstItem="aJT-dU-WJI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="MlP-Gj-Rwg"/>
+                            <constraint firstItem="xhc-e4-nGo" firstAttribute="top" secondItem="aJT-dU-WJI" secondAttribute="bottom" constant="86" id="Mp9-oM-3Uw"/>
+                            <constraint firstItem="aJT-dU-WJI" firstAttribute="top" secondItem="kxX-KX-rd4" secondAttribute="bottom" constant="30" id="WRc-UU-SKO"/>
+                            <constraint firstItem="sBm-JG-01v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="bXU-Av-650"/>
+                            <constraint firstItem="xhc-e4-nGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="hgh-AT-yLo"/>
+                            <constraint firstItem="kxX-KX-rd4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="it4-my-ZxV"/>
+                            <constraint firstItem="kxX-KX-rd4" firstAttribute="top" secondItem="sBm-JG-01v" secondAttribute="bottom" constant="31" id="neD-vE-xDl"/>
+                            <constraint firstItem="sBm-JG-01v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="ttW-1m-uvN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nR4-jd-SfN"/>
+                    <connections>
+                        <outlet property="accountTF" destination="sBm-JG-01v" id="TMl-bR-J9Q"/>
+                        <outlet property="friendTF" destination="xhc-e4-nGo" id="1k7-Gg-heN"/>
+                        <outlet property="pwdTF" destination="kxX-KX-rd4" id="VTI-8I-4SN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WVo-mV-Ne1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M26-SY-nAL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WDL-8t-WqU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ifH-SV-dLC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxf-tU-D5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
