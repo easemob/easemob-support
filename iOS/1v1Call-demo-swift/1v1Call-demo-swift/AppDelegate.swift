@@ -22,6 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let err = EMClient.shared().initializeSDK(with: options)
         print("初始化；\(String(describing: err))")
         print(NSHomeDirectory())
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, err in
+            if err == nil{
+                // 注册成功
+               DispatchQueue.main.async {
+                   application.registerForRemoteNotifications()
+               }
+            }
+        }
         return true
     }
 
@@ -41,6 +49,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
-
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data){
+    
+    }
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print(error)
+    }
 }
 
