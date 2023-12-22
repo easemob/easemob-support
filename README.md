@@ -9,5 +9,7 @@
 
 - [从零开始集成声网音视频功能(iOS版)](iOS/1v1Call-demo-swift)
 
+## Flutter 实例代码
 
+- [从零开始集成声网音视频功能(iOS版)](Flutter/push_demo)
 
