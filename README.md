@@ -11,5 +11,5 @@
 
 ## Flutter 实例代码
 
-- [从零开始集成声网音视频功能(iOS版)](Flutter/push_demo)
+- [集成flutter sdk 如何绑定推送信息(iOS版本)](Flutter/push_demo)
 
