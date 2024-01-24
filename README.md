@@ -21,3 +21,7 @@
 ## uniApp 示例代码
 
 - [uniApp 中处理常见断网重连问题相关实践](Uni-App/uni-connect-opt-example)
+
+## Mini-Program
+
+-[Taro 集成环信 sdk 并开发至微信小程序的示例代码](Mini-Program/taroExample)
