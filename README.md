@@ -27,3 +27,5 @@
 -[Taro 集成环信 sdk 并开发至微信小程序的示例代码](Mini-Program/taroExample)
 
 ## Electron
+
+-[WebIM-UiKit-Electron 桌面端集成 UIkit 测试实例代码](Electron/webim-uikit-electron)
