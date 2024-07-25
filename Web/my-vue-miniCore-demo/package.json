@@ -1,0 +1,33 @@
+{
+  "name": "my-vue-minicore-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^8.4.2",
+    "agora-rtc-sdk-ng": "^4.21.0",
+    "axios": "^0.27.2",
+    "benz-amr-recorder": "^1.1.5",
+    "easemob-websdk": "^4.8.1",
+    "element-plus": "^2.2.5",
+    "lodash": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "path": "^0.12.7",
+    "pinyin-pro": "^3.23.1",
+    "vue": "^3.4.31",
+    "vue-at": "^3.0.0-alpha.2",
+    "vue-router": "^4.4.0",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "vite": "^5.3.4"
+  }
+}
