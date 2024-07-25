@@ -10,6 +10,13 @@
 npm create vite@latest my-vue-app -- --template vue
 ```
 
+### 安装依赖
+
+```sh
+npm i
+
+```
+
 ### 运行
 
 ```sh

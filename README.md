@@ -17,6 +17,7 @@
 ## Web 实例代码
 
 - [通过 WebIM sdk 实现一个聊天室插件](Web/emchat-chatroom-widget)
+- [官网 vue3-miniCore 示例 demo 从 vue-cli 迁移至 vite 平台示例](Web/my-vue-miniCore-demo)
 
 ## uniApp 示例代码
 
