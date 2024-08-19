@@ -35,17 +35,17 @@
 ```
 
 ## 运行示例项
-1.在入口文件进行初始化，填写自己的appkey
+- 1.在入口文件进行初始化，填写自己的appkey
 ![image](images/1.png)
-2.登录页面
+- 2.登录页面
 ![image](images/2.jpg)
-3.会话页面
+- 3.会话页面
 ![image](images/3.jpg)
-4.联系人页面
+- 4.联系人页面
 ![image](images/4.jpg)
-5.个人页面
+- 5.个人页面
 ![image](images/5.jpg)
-6.聊天页面
+- 6.聊天页面
 ![image](images/6.jpg)
 
 ## 示例说明
