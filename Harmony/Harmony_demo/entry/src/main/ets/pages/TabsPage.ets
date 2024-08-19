@@ -8,7 +8,6 @@ import { kvStore } from '../common/KVStoreManager'
 @Entry
 struct TabsPage {
   @State curIndex:number = 0
-
   build() {
     Tabs({barPosition:BarPosition.End}){
       ForEach(tabBarInfoList,(item:TabBarModel,index:number)=>{
@@ -47,13 +46,5 @@ struct TabsPage {
     .alignItems(HorizontalAlign.Center)
     .justifyContent(FlexAlign.Center)
     .border({ width: { top: 0.5 }, color: { top: '#5C000000' }, style: { top: BorderStyle.Solid } })
-  }
-  onPageShow(): void {
-
-  }
-  onPageHide(): void {
-  }
-  aboutToAppear(): void {
-    console.error("------aboutToAppear-----")
   }
 }

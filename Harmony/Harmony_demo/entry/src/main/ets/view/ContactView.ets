@@ -13,7 +13,7 @@ export struct ContactView{
         .width(40)
         .height(40)
         .margin(10)
-        .margin({left:10})
+        .margin({left:20})
       Text(this.contact?.name ? this.contact?.name : this.contact?.userId)
         .fontSize(18)
         .layoutWeight(1)

@@ -5,8 +5,8 @@ import { kvStore } from '../common/KVStoreManager';
 @Entry
 @Component
 struct Index {
-  @State name: string = 'wf1';
-  @State pw: string = '1';
+  @State name: string = '';
+  @State pw: string = '';
   build() {
     Column({ space: 20 }){
       Blank(160)

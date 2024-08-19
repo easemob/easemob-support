@@ -118,11 +118,6 @@ struct ChatPage {
     }
 
     let  list = await this.conv?.loadMoreMessagesFromDB("",50);
-    if (list?.length == 0 ){
-      const option = new FetchMessageOption()
-      option.setIsSave(true)
-      list =  (await ChatClient.getInstance().chatManager()?.fetchHistoryMessages(this.conv?.conversationId(),this.conv?.getType(),50,"",option))?.getResult().reverse()
-    }
     if (list != undefined){
       this.messageHandle(list)
     }

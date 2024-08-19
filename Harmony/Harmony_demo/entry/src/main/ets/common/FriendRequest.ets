@@ -13,7 +13,6 @@ export  class FriendRequestModel{
 class FriendRequestStore {
   KEY = 'friendRequestStore'
   store = preferences.getPreferencesSync(getContext(), { name: this.KEY })
-
   setItem(key: string,value:string) {
     this.store.putSync(key, value)
     this.store.flush()

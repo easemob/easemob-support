@@ -83,25 +83,10 @@ export  struct ConversationPage {
       }
     }
     ChatClient.getInstance().chatManager()?.addMessageListener(messageListener);
-
-    let contactListener: ContactListener = {
-      onFriendRequestAccepted : (userId: string) => {
-        this.loadData()
-      },
-      onContactInvited : (userId: string, reason: string) => {
-        // 收到好友邀请。
-        FrStore.setItem(userId,"请求信息:"+reason)
-      },
-    }
-    ChatClient.getInstance().contactManager()?.addContactListener(contactListener);
   }
 
   async loadData(){
-
     let list = ChatClient.getInstance().chatManager()?.getAllConversationsBySort();
-    if (list?.length == 0){
-      list = (await ChatClient.getInstance().chatManager()?.fetchConversationsFromServer(50, ""))?.getResult()
-    }
     if (list != undefined){
       let modelList:ConversationModel[] = [] ;
       let unknownUsers:string[] = [] ;

@@ -9,7 +9,7 @@ import mediaLibrary from '@ohos.multimedia.mediaLibrary';
 import { media } from '@kit.MediaKit';
 import fs from '@ohos.file.fs';
 import { fsUtilStore } from '../common/FsUtil';
-import { ChatCallback, ChatClient, ChatMessage, Conversation } from 'chatsdk';
+import { ChatCallback, ChatClient, ChatMessage, Conversation, VideoMessageBody } from 'chatsdk';
 
 enum RecordStatus{
   RecordNone,
