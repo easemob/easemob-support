@@ -5,7 +5,6 @@ import { abilityAccessCtrl, common, Permissions } from '@kit.AbilityKit';
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 import { fileIo, picker } from '@kit.CoreFileKit';
 import { BusinessError } from '@kit.BasicServicesKit';
-import mediaLibrary from '@ohos.multimedia.mediaLibrary';
 import { media } from '@kit.MediaKit';
 import fs from '@ohos.file.fs';
 import { fsUtilStore } from '../common/FsUtil';
