@@ -1,4 +1,4 @@
-import { ChatMessage, ContentType, Conversation, ConversationType, ImageMessageBody, TextMessageBody } from 'chatsdk'
+import { ChatMessage, ContentType, Conversation, ConversationType, ImageMessageBody, TextMessageBody } from '@easemob/chatsdk'
 import { Utils } from '../common/Utils'
 import { router } from '@kit.ArkUI'
 import { ConversationModel } from '../model/ConvListData'

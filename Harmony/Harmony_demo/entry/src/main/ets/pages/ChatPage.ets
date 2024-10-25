@@ -5,7 +5,7 @@ import {
   ChatType, ContentType, Conversation,
   ConversationType,
   FetchMessageOption,
-  MessageDirection } from 'chatsdk';
+  MessageDirection } from '@easemob/chatsdk';
 import { CommonTitleBar } from '../common/CommTitleBar';
 import { Constants } from '../common/Constants';
 import { ImgSengView, TxtSengView, VideoSengView, VoiceSengView } from '../view/MsgSengView';

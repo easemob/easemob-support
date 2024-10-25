@@ -1,4 +1,4 @@
-import { ChatClient } from 'chatsdk';
+import { ChatClient } from '@easemob/chatsdk';
 import { CommonTitleBar } from '../common/CommTitleBar';
 import { Constants } from '../common/Constants';
 import { FriendRequestModel as FriendRequestModel, FrStore } from '../common/FriendRequest';

@@ -1,4 +1,4 @@
-import { ChatMessage, Conversation } from 'chatsdk'
+import { ChatMessage, Conversation } from '@easemob/chatsdk'
 
 @Observed
 export class ConversationModel{

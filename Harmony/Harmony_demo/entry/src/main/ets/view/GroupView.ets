@@ -1,4 +1,4 @@
-import { Contact, ConversationType, Group } from 'chatsdk'
+import { ConversationType, Group } from '@easemob/chatsdk'
 import { router } from '@kit.ArkUI'
 import { ContactModel } from '../pages/ContactPage'
 

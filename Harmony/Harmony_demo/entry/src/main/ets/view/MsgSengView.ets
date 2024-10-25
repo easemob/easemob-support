@@ -2,14 +2,13 @@ import { display, MeasureText, router } from '@kit.ArkUI'
 import {
   ChatClient,
   ChatManager,
-  ChatMessage, ImageMessageBody, TextMessageBody, VideoMessageBody, VoiceMessageBody } from 'chatsdk'
+  ChatMessage, ImageMessageBody, TextMessageBody, VideoMessageBody, VoiceMessageBody } from '@easemob/chatsdk'
 import { Utils } from '../common/Utils'
 import { fileIo, fileUri } from '@kit.CoreFileKit'
 import { playAudioStore } from '../common/PlayAudio'
 import { media } from '@kit.MediaKit'
 import { image } from '@kit.ImageKit'
 import File from '@system.file'
-import { EMClient } from 'chatsdk/src/main/cpp/types/libhyphenate'
 import { MessageModel } from '../model/MessageListData'
 import { kvStore } from '../common/KVStoreManager'
 

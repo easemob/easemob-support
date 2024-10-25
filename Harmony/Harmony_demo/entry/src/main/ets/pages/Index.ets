@@ -1,4 +1,4 @@
-import { ChatClient, ChatError } from 'chatsdk';
+import { ChatClient, ChatError } from '@easemob/chatsdk';
 import { Prompt, router } from '@kit.ArkUI';
 import { kvStore } from '../common/KVStoreManager';
 

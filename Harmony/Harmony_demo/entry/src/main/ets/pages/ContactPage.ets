@@ -1,4 +1,4 @@
-import { ChatClient, Contact, ContactListener, Conversation, ConversationType } from 'chatsdk';
+import { ChatClient, Contact, ContactListener, Conversation, ConversationType } from '@easemob/chatsdk';
 import { CommonTitleBar } from '../common/CommTitleBar';
 import { Constants } from '../common/Constants';
 import { ContactView } from '../view/ContactView';

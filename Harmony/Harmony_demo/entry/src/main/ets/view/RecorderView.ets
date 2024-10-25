@@ -8,7 +8,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { media } from '@kit.MediaKit';
 import fs from '@ohos.file.fs';
 import { fsUtilStore } from '../common/FsUtil';
-import { ChatCallback, ChatClient, ChatMessage, Conversation, VideoMessageBody } from 'chatsdk';
+import { ChatCallback, ChatClient, ChatMessage, Conversation, VideoMessageBody } from '@easemob/chatsdk';
 
 enum RecordStatus{
   RecordNone,

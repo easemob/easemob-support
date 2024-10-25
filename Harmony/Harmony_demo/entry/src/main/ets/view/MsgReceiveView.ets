@@ -1,5 +1,5 @@
 import { Utils } from '../common/Utils'
-import { ChatClient, ChatType, ImageMessageBody, TextMessageBody, VideoMessageBody, VoiceMessageBody } from 'chatsdk'
+import { ChatClient, ChatType, ImageMessageBody, TextMessageBody, VideoMessageBody, VoiceMessageBody } from '@easemob/chatsdk'
 import { fileUri } from '@kit.CoreFileKit'
 import { playAudioStore } from '../common/PlayAudio'
 import fs from '@ohos.file.fs';

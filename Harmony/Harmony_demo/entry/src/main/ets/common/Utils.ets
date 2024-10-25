@@ -1,6 +1,6 @@
 import systemDateTime from '@ohos.systemDateTime'
 import { MeasureText } from '@kit.ArkUI';
-import { ChatMessage, TextMessageBody, ContentType } from 'chatsdk';
+import { ChatMessage, TextMessageBody, ContentType } from '@easemob/chatsdk';
 
 /*公共方法类*/
 export class Utils {

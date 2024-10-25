@@ -1,7 +1,7 @@
 // 导入模块
 import distributedKVStore from '@ohos.data.distributedKVStore';
 import { featureAbility } from '@kit.AbilityKit';
-import { ChatClient, UserInfo, UserInfoType } from 'chatsdk';
+import { ChatClient, UserInfo, UserInfoType } from '@easemob/chatsdk';
 import distributedData from '@ohos.data.distributedData';
 import { BusinessError, emitter } from '@kit.BasicServicesKit';
 import { HashMap } from '@kit.ArkTS';

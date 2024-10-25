@@ -1,4 +1,4 @@
-import { ChatClient, ChatManager, ConversationType, Group } from 'chatsdk';
+import { ChatClient, ChatManager, ConversationType, Group } from '@easemob/chatsdk';
 import { CommonTitleBar } from '../common/CommTitleBar';
 import { Constants } from '../common/Constants';
 import { GroupView } from '../view/GroupView';
