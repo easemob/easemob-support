@@ -10,8 +10,8 @@ export default class EntryAbility extends UIAbility {
     if (this.context){
       let options = new ChatOptions("easemob-demo#support");
       options.setAcceptInvitationAlways(false)
-      options.setAutoLogin(false)
-      ChatClient.getInstance().init(this.context,options);
+      ChatClient.getInstance().init(this.context,options)
+
     }
   }
 

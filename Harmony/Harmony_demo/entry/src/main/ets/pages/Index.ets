@@ -35,5 +35,11 @@ struct Index {
     }.width("100%")
   }
   aboutToAppear(): void {
+    ChatClient.getInstance().isAutoLogin().then(isAutoLogin => {
+      if (isAutoLogin ) {
+        kvStore.getAll()
+        router.replaceUrl({ url: 'pages/TabsPage' })
+      }
+    })
   }
 }
