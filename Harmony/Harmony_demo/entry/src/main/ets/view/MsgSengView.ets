@@ -2,7 +2,9 @@ import { display, MeasureText, router } from '@kit.ArkUI'
 import {
   ChatClient,
   ChatManager,
-  ChatMessage, ImageMessageBody, TextMessageBody, VideoMessageBody, VoiceMessageBody } from '@easemob/chatsdk'
+  ChatMessage, ImageMessageBody,
+  MessageExtType,
+  TextMessageBody, VideoMessageBody, VoiceMessageBody } from '@easemob/chatsdk'
 import { Utils } from '../common/Utils'
 import { fileIo, fileUri } from '@kit.CoreFileKit'
 import { playAudioStore } from '../common/PlayAudio'
@@ -11,6 +13,7 @@ import { image } from '@kit.ImageKit'
 import File from '@system.file'
 import { MessageModel } from '../model/MessageListData'
 import { kvStore } from '../common/KVStoreManager'
+import { EMClient } from '@easemob/chatsdk/src/main/cpp/types/libhyphenate/EMClient'
 
 @Component
 export struct  TxtSengView{
@@ -44,6 +47,9 @@ export struct  TxtSengView{
       // Text()
     }.alignItems(HorizontalAlign.End)
     .width('100%')
+    .onClick(()=>{
+      this.msg?.hxMessage?.isReceiverRead()
+    })
   }
 }
 

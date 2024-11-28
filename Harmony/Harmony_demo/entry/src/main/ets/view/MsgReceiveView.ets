@@ -6,6 +6,7 @@ import fs from '@ohos.file.fs';
 import { MessageModel } from '../model/MessageListData'
 import { Size } from '@ohos/hypium'
 import { router } from '@kit.ArkUI'
+import { print } from '@kit.BasicServicesKit';
 
 @Component
 export struct  TxtReceiveView{

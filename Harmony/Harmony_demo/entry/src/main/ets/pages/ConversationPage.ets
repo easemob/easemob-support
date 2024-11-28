@@ -8,8 +8,8 @@ import { emitter } from '@kit.BasicServicesKit';
 import { FrStore } from '../common/FriendRequest';
 
 import { ConversationModel, ConvListData} from '../model/ConvListData'
-import { ChatClient, ChatMessage, ChatMessageListener, ContactListener, Conversation, ConversationType } from '@easemob/chatsdk';
 import { kvStore } from '../common/KVStoreManager';
+import { ChatClient, ChatMessage, ChatMessageListener, ConversationType } from '@easemob/chatsdk';
 
 @Component
 export  struct ConversationPage {

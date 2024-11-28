@@ -7,7 +7,7 @@
   "license": "",
   "dependencies": {
 //    "@ohos/pulltorefresh": "^2.0.5",
-    "@easemob/chatsdk": "file:./libs/chatsdk-1.4.1.har"
+    "@easemob/chatsdk": "file:./libs/chatsdk-1.4.2.har"
   }
 }
 
