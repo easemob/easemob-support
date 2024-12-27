@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Easemob_UIkit_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="nameTF" destination="kkk-tY-sMD" id="beJ-zS-tat"/>
+                <outlet property="tokenTF" destination="a4K-NH-Ats" id="N3b-A4-9IP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkk-tY-sMD">
+                    <rect key="frame" x="30" y="259" width="333" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="R2b-DD-lhp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4K-NH-Ats">
+                    <rect key="frame" x="30" y="319" width="333" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="n47-cT-knk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVs-Ob-fRD">
+                    <rect key="frame" x="159" y="409" width="75" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="AAq-OO-lgC"/>
+                        <constraint firstAttribute="width" constant="75" id="TS7-ez-lI2"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" name="AccentColor"/>
+                    </state>
+                    <connections>
+                        <action selector="login" destination="-1" eventType="touchUpInside" id="3g2-be-Z6T"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="a4K-NH-Ats" firstAttribute="top" secondItem="kkk-tY-sMD" secondAttribute="bottom" constant="20" id="6ff-KT-K0J"/>
+                <constraint firstItem="mVs-Ob-fRD" firstAttribute="top" secondItem="a4K-NH-Ats" secondAttribute="bottom" constant="50" id="Fqq-uB-ISG"/>
+                <constraint firstItem="kkk-tY-sMD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Vbd-jG-Hhj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kkk-tY-sMD" secondAttribute="trailing" constant="30" id="WOM-5S-EBI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a4K-NH-Ats" secondAttribute="trailing" constant="30" id="gFe-19-5YP"/>
+                <constraint firstItem="kkk-tY-sMD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="lB2-Uv-xxA"/>
+                <constraint firstItem="mVs-Ob-fRD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qLH-UK-ijd"/>
+                <constraint firstItem="a4K-NH-Ats" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="weO-pa-rug"/>
+            </constraints>
+            <point key="canvasLocation" x="102" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
