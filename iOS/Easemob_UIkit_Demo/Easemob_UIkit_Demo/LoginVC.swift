@@ -21,31 +21,18 @@ class LoginVC: UIViewController {
 
 
     @IBAction func login() {
-        // YWMtIMUYfsQFEe-kvXvo9Aob8A1mN7fFQUJHtJstEOESXXkbDglAxAUR74ydb8Tas9KPAwMAAAGUBjjdSAAAAAB0H75oMfLehJBeTWKy9768m83-_utkyzPgFcrfd8biLA
-        guard let userid = nameTF.text else { return }
-        
-        ChatClient.shared().userInfoManager?.fetchUserInfo(byId: [userid],completion: { result, err in
-            if err != nil {
-                print(err?.errorDescription ?? "")
+      
+        let appUser = ChatUserProfile();
+        appUser.id = nameTF.text ?? ""
+        appUser.nickname = "张三"
+        appUser.avatarURL = "https://accktvpic.oss-cn-beijing.aliyuncs.com/pic/sample_avatar/sample_avatar_4.png"
+        ChatUIKitClient.shared.login(user: appUser, token: self.tokenTF.text ?? "") { error in
+            if error == nil{
+                guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })else { return }
+                window.rootViewController = UITabBarVC()
+            }else{
+                print("登录失败：\(String(describing: error?.errorDescription))")
             }
-            let appUser = ChatUserProfile();
-            let userInfo = result?[userid]
-            appUser.id = userid
-            appUser.nickname = userInfo?.nickname ?? ""
-            appUser.avatarURL = userInfo?.avatarUrl ?? ""
-            ChatUIKitClient.shared.login(user: appUser, token: self.tokenTF.text ?? "") { error in
-                if error == nil{
-                    guard let window = UIApplication.shared.keyWindow else { return }
-                    window.rootViewController = UITabBarVC()
-                }else{
-                    print("登录失败：\(String(describing: error?.errorDescription))")
-                }
-            }
-        })
-
-   
+        }
     }
-
-
-    
 }
